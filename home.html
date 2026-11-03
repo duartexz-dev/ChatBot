@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090C">
+  <meta name="description" content="Demonstração visual de uma interface de conversa. Sem IA, envio ou armazenamento.">
+  <title>chat. — espaço de conversa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="chat-page">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="chat-shell">
+    <aside class="chat-sidebar" aria-label="Informações da interface visual">
+      <a class="wordmark sidebar-brand" href="index.html" aria-label="Voltar à apresentação">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>chat<span class="wordmark-period">.</span></span>
+      </a>
+
+      <div class="sidebar-context">
+        <span class="eyebrow">SEU ESPAÇO</span>
+        <div class="context-chip"><span class="context-spark" aria-hidden="true">✳</span><span>Conversa visual</span><span class="context-number">01</span></div>
+      </div>
+
+      <div class="sidebar-note">
+        <span class="note-rule" aria-hidden="true"></span>
+        <p>Uma tela para imaginar o começo de uma boa pergunta.</p>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="prototype-stamp"><span class="stamp-dot" aria-hidden="true"></span><span>INTERFACE VISUAL<br>SEM BACKEND</span></div>
+        <a class="sidebar-exit" href="index.html"><span aria-hidden="true">↗</span> Sobre esta experiência</a>
+      </div>
+    </aside>
+
+    <main id="main" class="chat-main">
+      <header class="chat-topbar">
+        <div class="mobile-brand"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>chat<span class="wordmark-period">.</span></span></div>
+        <div class="model-indicator"><span class="model-orb" aria-hidden="true"></span><span>ESPAÇO DE PERGUNTAS</span><span class="model-mode">VISUAL</span></div>
+        <a class="topbar-about" href="index.html">Sobre a interface <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <section class="conversation" aria-labelledby="welcome-title">
+        <div class="conversation-meta"><span>MAPA 001</span><span class="meta-line" aria-hidden="true"></span><span>SEM CONVERSA ATIVA</span></div>
+
+        <div class="welcome-block">
+          <div class="welcome-symbol" aria-hidden="true">
+            <span class="symbol-ring ring-a"></span><span class="symbol-ring ring-b"></span>
+            <span class="symbol-center">✳</span><span class="symbol-satellite satellite-a"></span><span class="symbol-satellite satellite-b"></span>
+          </div>
+          <p class="eyebrow welcome-eyebrow">CURIOSIDADE, SEM ROTEIRO</p>
+          <h1 id="welcome-title">O que está<br>na sua <span>órbita?</span></h1>
+          <p class="welcome-description">Um bom começo pode ser uma pergunta simples.<br class="desktop-break"> Imagine o que você gostaria de descobrir.</p>
+        </div>
+
+        <div class="prompt-section" role="group" aria-label="Sugestões visuais indisponíveis">
+          <div class="prompt-heading"><span>IDEIAS PARA COMEÇAR</span><span>EXEMPLOS VISUAIS</span></div>
+          <div class="prompt-grid">
+            <button type="button" class="prompt-card" disabled><span class="prompt-glyph glyph-ice" aria-hidden="true">✳</span><span>Como nasce uma ideia?</span><span class="prompt-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="prompt-card" disabled><span class="prompt-glyph glyph-secondary" aria-hidden="true">⌁</span><span>Explique algo de um jeito novo</span><span class="prompt-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="prompt-card" disabled><span class="prompt-glyph glyph-lunar" aria-hidden="true">◌</span><span>Que curiosidade te surpreende?</span><span class="prompt-arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+
+        <div class="composer-wrap">
+          <label class="composer-label" for="message-visual">CAMPO DE MENSAGEM · INDISPONÍVEL</label>
+          <div class="composer">
+            <textarea id="message-visual" rows="1" disabled placeholder="O envio de mensagens não está disponível"></textarea>
+            <button type="button" class="send-button" disabled aria-label="Enviar mensagem indisponível"><span aria-hidden="true">↑</span></button>
+          </div>
+          <p class="composer-disclaimer"><span aria-hidden="true">i</span> Interface visual — nenhuma mensagem é enviada ou guardada.</p>
+        </div>
+      </section>
+
+      <footer class="chat-footer"><span>UMA INTERFACE PARA IMAGINAR</span><span>SEM IA · SEM ARMAZENAMENTO · SEM ENVIO</span></footer>
+    </main>
+  </div>
+</body>
+
+</html>
